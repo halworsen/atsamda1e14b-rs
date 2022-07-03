@@ -1,0 +1,21 @@
+[package]
+name = "atsamda1e14b"
+version = "0.1.0"
+authors = ["Markus Wang Halvorsen <markus@halvorsenfamilien.com>"]
+description = "Peripheral access API for the ATSAMDA1E14B MCU generated using svd2rust"
+repository = "https://github.com/halworsen/atsamda1e14b-rs"
+license = "MIT"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cortex-m = "0.7"
+vcell = "0.1.2"
+
+[dependencies.cortex-m-rt]
+optional = true
+version = "0.6.13"
+
+[features]
+rt = ["cortex-m-rt/device"]

@@ -1,0 +1,6 @@
+*.svd
+svd2rust
+
+# Added by cargo
+
+/target
